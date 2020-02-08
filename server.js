@@ -59,5 +59,5 @@ server.on("request", (req, res) => {
 });
 // service
 server.listen(port, "localhost", () => {
-  console.log(`running on ${port}`);
+  console.log(`running on port ${port}`);
 });
