@@ -2,7 +2,7 @@
 //  wasn't true CSV so that part was a bit confusing. Thank you for the opportunity!
 
 const server = require("http").createServer();
-
+const port = 5555;
 server.on("request", (req, res) => {
   req.on("data", chunk => {
     // turn request into string
@@ -58,6 +58,6 @@ server.on("request", (req, res) => {
   });
 });
 // service
-server.listen(5555, "localhost", () => {
-  console.log("running");
+server.listen(port, "localhost", () => {
+  console.log(`running on ${port}`);
 });
